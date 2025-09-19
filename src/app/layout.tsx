@@ -28,11 +28,11 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="flex items-center">
+        <div className="flex flex-row items-center gap-2">
           <Sidebar />
-          
+          <div className="flex flex-col items-center h-[88lvh] w-full mr-6 rounded-2xl border-2 border-gray-400 shadow-xl">
             {children}
-          
+          </div>
         </div>
 
 

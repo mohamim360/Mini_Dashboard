@@ -22,11 +22,11 @@ function Sidebar() {
 
   return (
     <motion.aside
-      animate={{ width: isOpen ? 200 : 64 }}
+      animate={{ width: isOpen ? 125 : 78 }}
       transition={{ type: "spring", stiffness: 100, damping: 20 }}
       className="h-screen"
     >
-      <div className="h-full flex items-center">
+      <div className="h-full flex items-center w-full">
         <div className="flex flex-col items-center h-[88lvh] w-24 ml-4 mr-auto rounded-2xl border border-gray-700 bg-gray-900 shadow-lg">
           {/* Header */}
           <div className="w-full py-4 px-2 flex flex-col items-center justify-center border-b border-gray-700">
@@ -53,12 +53,12 @@ function Sidebar() {
             </AnimatePresence>
           </div>
           
-          <nav className="flex-1 flex flex-col items-center justify-center py-4">
+          <nav className="flex-1 flex flex-col items-center py-4">
             <ul className="flex flex-col items-center gap-y-8 text-sm font-medium text-white">
               {links.map((link) => (
-                <li key={link.hash}>
+                <li key={link.route}>
                   <Link
-                    href={link.hash}
+                    href={link.route}
                     className="px-2 py-1 rounded hover:bg-gray-800 transition-colors flex items-center gap-2"
                   >
                     {linkicons[link.name]}

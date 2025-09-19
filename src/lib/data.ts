@@ -3,18 +3,18 @@
 export const links = [
   {
     name: "Home",
-    hash: "#home",
+    route: "/",
   },
   {
     name: "Posts",
-    hash: "#posts",
+    route: "/posts",
   },
   {
     name: "Users",
-    hash: "#users",
+    route: "/users",
   },
   {
     name: "Profile",
-    hash: "#profile",
+    route: "/profile",
   },
 ] as const;
