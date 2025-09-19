@@ -1,4 +1,4 @@
-export inteface Post = {
+export inteface Post {
 	userId: number;
 	id: number;
 	title: string;

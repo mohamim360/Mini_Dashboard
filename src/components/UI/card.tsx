@@ -1,13 +1,12 @@
 import Link from "next/link";
 
 interface CardProps {
-  id: number;
   title: string;
   body: string;
   link: string;
 }
 
-export default function Card({ id, title, body, link }: CardProps) {
+export default function Card({ title, body, link }: CardProps) {
   return (
     <div className="border rounded-lg shadow-md p-4 bg-white hover:shadow-lg transition flex flex-col h-full">
      

@@ -5,7 +5,6 @@ import Loader from "@/components/UI/loader"
 import Error from "@/components/UI/error"
 import { useFetch } from "@/hook/useFetch"
 import { useState } from "react"
-import { VscError } from "react-icons/vsc";
 import {FiFileText} from "react-icons/fi";
 import { Post } from "@/lib/type";
 
@@ -46,11 +45,10 @@ function Posts() {
 				<Error/>
 			)}
 
-			<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 overflow-scroll">
+			<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 overflow-y-scroll">
 				{posts?.map((post) => (
 					<Card
 						key={post.id}
-						id={post.id}
 						title={post.title}
 						body={post.body}
 						link={`/posts/${post.id}`}
