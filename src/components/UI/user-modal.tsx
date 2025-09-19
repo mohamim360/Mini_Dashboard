@@ -64,7 +64,7 @@ function UserModal({ selectedUser, setSelectedUser }: { selectedUser: User | nul
               <div className="flex justify-end mt-6">
                 <button
                   onClick={() => setSelectedUser(null)}
-                  className="px-5 py-2 rounded-lg bg-gray-600 text-white font-medium shadow hover:bg-gray-700 transition"
+                  className="px-5 py-2 rounded-lg bg-gray-900 text-white font-medium shadow hover:bg-gray-700 transition"
                 >
                   Close
                 </button>
