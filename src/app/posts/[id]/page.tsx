@@ -3,9 +3,10 @@
 import { useFetch } from "@/hook/useFetch";
 import Loader from "@/components/UI/loader"
 import Error from "@/components/UI/error"
+import { Post as PostType } from "@/lib/type";
 
 export default function Post({ params }: { params: { id: string } }) {
-  const { data: post, loading, error } = useFetch<Post>(
+  const { data: post, loading, error } = useFetch<PostType>(
     `https://jsonplaceholder.typicode.com/posts/${params.id}`
   );
 
@@ -18,7 +19,7 @@ export default function Post({ params }: { params: { id: string } }) {
 				</div>
 			}
 			{error && (
-				<Error/>
+				<Error error={error}/>
 			)}
 
       {post && (
