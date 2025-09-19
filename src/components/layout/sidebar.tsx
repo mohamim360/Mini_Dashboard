@@ -27,7 +27,7 @@ function Sidebar() {
       className="h-screen"
     >
       <div className="h-full flex items-center w-full">
-        <div className="flex flex-col items-center h-[88lvh] w-24 ml-4 mr-auto rounded-2xl border border-gray-700 bg-gray-900 shadow-lg">
+        <div className="flex flex-col items-center h-[88lvh] w-32 ml-4 mr-auto rounded-2xl border border-gray-700 bg-gray-900 shadow-lg">
           {/* Header */}
           <div className="w-full py-4 px-2 flex flex-col items-center justify-center border-b border-gray-700">
             <motion.div 

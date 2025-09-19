@@ -16,7 +16,7 @@ export function useFetch<T>(url: string | null) {
 
     fetch(url)
       .then((response) => {
-        if (!response.ok) throw new Error("Failed to fetxh data");
+        if (!response.ok) throw new Error("Failed to fetch data");
         return response.json();
       })
       .then((data: T) => setData(data))
