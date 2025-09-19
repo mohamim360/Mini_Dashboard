@@ -17,7 +17,7 @@ function Posts() {
 
 	return (
 		<div className="p-4 flex flex-col gap-4 mx-auto w-full h-full">
-
+			{/* Header */}
 			<div className="flex items-center justify-between mb-6 border-b pb-2 mx-4">
 				
 				<div className="flex items-center gap-2">
@@ -34,17 +34,19 @@ function Posts() {
 				</button>
 			</div>
 
-
-
+			{/* Loader */}
 			{loading &&
 				<div className="flex items-center justify-center h-[70vh]">
 					<Loader />
 				</div>
 			}
+
+			{/* Error */}
 			{error && (
 				<Error error={error}/>
 			)}
 
+			{/* Posts Grid */}
 			<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 overflow-y-scroll">
 				{posts?.map((post) => (
 					<Card
@@ -55,9 +57,6 @@ function Posts() {
 					/>
 				))}
 			</div>
-
-
-
 		</div>
 	)
 }
