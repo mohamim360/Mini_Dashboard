@@ -47,7 +47,7 @@ function Posts() {
 
 			{/* Error */}
 			{error && (
-				<Error error={error}/>
+				<Error error="Failed to load posts"/>
 			)}
 
 			{/* Posts Grid */}
