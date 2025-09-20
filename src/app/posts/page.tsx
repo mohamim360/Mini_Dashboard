@@ -8,11 +8,11 @@ import { useState } from "react"
 import { Post } from "@/lib/type";
 import { linkIcons } from "@/lib/linkIcon";
 
-
 function Posts() {
 
 	const [url, setUrl] = useState("https://jsonplaceholder.typicode.com/posts")
 
+	// Fetch posts
 	const { data: posts, loading, error } = useFetch<Post[]>(url)
 
 	const Icon = linkIcons["Posts"] 
